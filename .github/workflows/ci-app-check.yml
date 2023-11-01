@@ -1,14 +1,14 @@
 name: ci-app-check
-  on: push
-    jobs:
-      build:
-        runs-on: ubuntu latest
+on: push
+jobs:
+  build:
+    runs-on: ubuntu latest
 
-        steps:
-          - uses: action/checkout@v3
-          - name: Setup
-            run: make setup
-          - name: Run tests
-            run: make test
-          - name: Run lint
-            run: make lint
+    steps:
+      - uses: action/checkout@v3
+      - name: Setup
+        run: make setup
+      - name: Run tests
+        run: make test
+      - name: Run lint
+        run: make lint
