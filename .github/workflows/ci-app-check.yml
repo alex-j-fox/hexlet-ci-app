@@ -2,7 +2,7 @@ name: ci-app-check
 on: push
 jobs:
   build:
-    runs-on: ubuntu latest
+    runs-on: ubuntu-latest
 
     steps:
       - uses: action/checkout@v3
